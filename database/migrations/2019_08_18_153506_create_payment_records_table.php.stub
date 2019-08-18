@@ -1,0 +1,45 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreatePaymentRecordsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('payment_records', function (Blueprint $table) {
+            $table->uuid('id')->primary();
+            $table->string('processor_name');
+            $table->string('processor_reference');
+            $table->boolean('refunded')->default(false);
+            $table->text('notes')->nullable()->default(null);
+            $table->string('method');
+            $table->string('currency');
+            $table->integer('amount');
+            $table->integer('fee')->default(0);
+            $table->string('source_id')->nullable()->default(null);
+            $table->string('source_brand')->nullable()->default(null);
+            $table->string('source_country')->nullable()->default(null);
+            $table->string('source_last4')->nullable()->default(null);
+            $table->string('source_exp_month')->nullable()->default(null);
+            $table->string('source_exp_year')->nullable()->default(null);
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('payment_records');
+    }
+}
