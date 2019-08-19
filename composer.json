@@ -1,5 +1,6 @@
 {
     "name": "christianbraybrooke/stripe-laravel-payment-intents",
+    "license": "MIT",
     "authors": [
         {
             "name": "Christian Braybrooke",
