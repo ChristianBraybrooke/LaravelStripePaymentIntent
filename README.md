@@ -38,7 +38,7 @@ php artisan migrate
 
 ### Stripe
 
-In order for us to be able to communicate with Stripe, you will need to add your API keys to the `.env` file, if you haven't done so already.
+In order for us to be able to communicate with Stripe, you will need to add your API keys to the `.env` file, if you haven't done so already. You will find your keys here [https://dashboard.stripe.com/apikeys](https://dashboard.stripe.com/apikeys)
 
 ```sh
 STRIPE_KEY=###
