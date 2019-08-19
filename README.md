@@ -7,7 +7,7 @@ This package is still under development, and will require some more documentatio
 First, require the package from packagist.org using the snippet below in the terminal. Laravel 5.5 and greater will autoload our Service provider.
 
 ```sh
-composer install christianbraybrooke/stripe-laravel-payment-intents
+composer require christianbraybrooke/stripe-laravel-payment-intents
 ```
 
 ### Database
