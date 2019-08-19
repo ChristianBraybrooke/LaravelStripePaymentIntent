@@ -36,6 +36,19 @@ php artisan vendor:publish --tag="payment-migrations"
 php artisan migrate
 ```
 
+### Stripe
+
+In order for us to be able to communicate with Stripe, you will need to add your API keys to the `.env` file, if you haven't done so already.
+
+```sh
+STRIPE_KEY=###
+STRIPE_SECRET=###
+```
+
+
+
+## Usage
+
 ### Payment Form
 
 Out of the box, we give you a simple payment form component which will allow you to get up and running in no time. Simply add the payment feilds and scripts components to the desired page and you are good to go!
