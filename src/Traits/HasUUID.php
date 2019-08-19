@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Traits;
+namespace ChrisBraybrooke\LaravelStripePaymentIntent\Traits;
 
 use Illuminate\Support\Str;
 

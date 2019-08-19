@@ -2,8 +2,8 @@
 
 namespace ChrisBraybrooke\LaravelStripePaymentIntent\Models;
 
-use App\Traits\HasUUID;
 use Illuminate\Database\Eloquent\Model;
+use ChrisBraybrooke\LaravelStripePaymentIntent\Traits\HasUUID;
 
 class PaymentRecord extends Model
 {
