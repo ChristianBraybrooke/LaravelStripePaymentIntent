@@ -33,11 +33,21 @@ class StripePaymentIntent
         Stripe::setApiKey($this->stripeSecret);
     }
 
+    /**
+     * Set the primary colour for the payment form.
+     *
+     * @param string $color
+     */
     public function setThemeColor($color)
     {
         $this->themeColor = $color;
     }
 
+    /**
+     * Get the primary theme colour.
+     *
+     * @return string
+     */
     public function getThemeColor()
     {
         return $this->themeColor;
